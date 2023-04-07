@@ -1,0 +1,22 @@
+{
+  "name": "cypress_dept",
+  "version": "1.0.0",
+  "description": "Cypress Challenge for DEPT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaloQ11/Cypress_DEPT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaloQ11/Cypress_DEPT/issues"
+  },
+  "homepage": "https://github.com/GonzaloQ11/Cypress_DEPT#readme",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}
