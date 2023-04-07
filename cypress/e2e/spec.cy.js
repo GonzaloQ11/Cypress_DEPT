@@ -3,9 +3,9 @@ import Homepage from '../pages/Homepage'
 const validateLastPage = (pages,lastPage) => {
   const pageTextValues = Array.from(pages).map(page => page.outerText)
   
-  cy.wrap(pageTextValues[pageTextValues.length - 1]).as('lastPageValue')
+  const lastPageValue = pageTextValues[pageTextValues.length - 1]
 
-  cy.get('@lastPageValue').should('equal', lastPage)
+  expect(lastPageValue).to.equal(lastPage)
 }
 
 describe('template spec', () => {
@@ -25,11 +25,7 @@ describe('template spec', () => {
 
       const firstFlightYears = firstFlightDates.map(dates => parseInt(dates.slice(0,4)))
       
-      firstFlightYears.forEach(year => {
-        cy.wrap(year).as('firstFlightYear')
-        cy.get('@firstFlightYear').should('be.greaterThan', 2005)
-      })
-      
+      firstFlightYears.forEach(year => expect(year).to.be.greaterThan(2005))
     })
 
     homepage.getSearchInput().should('be.visible')
