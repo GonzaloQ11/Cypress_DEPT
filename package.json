@@ -4,13 +4,13 @@
   "description": "Cypress Challenge for DEPT",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress run --headed"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GonzaloQ11/Cypress_DEPT.git"
   },
-  "author": "",
+  "author": "Gonzalo Quispe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GonzaloQ11/Cypress_DEPT/issues"
