@@ -8,11 +8,11 @@ const validateLastPage = (pages,lastPage) => {
   expect(lastPageValue).to.equal(lastPage)
 }
 
-describe('template spec', () => {
+describe('Cypress DEPT Challenge', () => {
 
   const homepage = new Homepage()
 
-  it('passes', () => {
+  it('Path 2 - No results show empty list, close icon resets search', () => {
     cy.visit('https://csb-x6dpt1.netlify.app/')
 
     cy.request('https://api.spacexdata.com/v3/rockets').as('rockets')
